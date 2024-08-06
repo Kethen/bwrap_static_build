@@ -16,7 +16,7 @@ dnf install -y autoconf automake gcc libcap-static libcap-devel libselinux-stati
 set -xe
 if ! [ -e bubblewrap ]
 then
-    git clone https://github.com/containers/bubblewrap.git -b v0.9.0
+    git clone https://github.com/Kethen/bubblewrap -b v0.9.0-android-compat
 fi
 cd bubblewrap
 CFLAGS="-static" ./autogen.sh
